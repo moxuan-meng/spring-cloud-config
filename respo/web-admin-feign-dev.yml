@@ -9,6 +9,10 @@ spring:
       content-type: text/html
   zipkin: #配置链路追踪服务
     base-url: http://localhost:9411
+  boot: #被监控服务
+    admin:
+      client:
+        url: http://localhost:8084
 
 server:
   port: 8765
